@@ -22,6 +22,7 @@ require_once "../database.php"
     </nav>
     <main class="">
         <div class="container ">
+            
             <div class="row row-cols-5 overflow-auto">
 
                 <?php foreach ($usersData as $user) { ?>
