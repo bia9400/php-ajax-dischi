@@ -58,7 +58,7 @@ $usersData=[
  [
     "title" =>"BAD",
     "artist"=>"Michael Jackson",
-    "imgURL"=>"1987",
-    "annoDisco"=>0,
+    "imgURL"=>"",
+    "annoDisco"=>1987,
  ],
 ];

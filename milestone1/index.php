@@ -1,22 +1,50 @@
-<?php 
+<?php
 require_once "../database.php"
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.css' integrity='sha512-F5fn88UDJWd0T1GwpnIpbuFuSxCgXNnJhIihkiWeqYUyLt3oPUaYzL774VjL7eGj8ktZCZQS//txAxgokiz1Lw==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="../style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.css' integrity='sha512-F5fn88UDJWd0T1GwpnIpbuFuSxCgXNnJhIihkiWeqYUyLt3oPUaYzL774VjL7eGj8ktZCZQS//txAxgokiz1Lw==' crossorigin='anonymous' />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <?php foreach($usersData as $user){?>
-        <h1><?php echo $user["title"] ?></h1>
-        <h4><?php echo $user["artist"] ?></h4>
-        <p><?php echo $user["annoDisco"] ?></p>
-    
-   <?php }?>
+    <nav>
+
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row row-cols-5">
+
+                <?php foreach ($usersData as $user) { ?>
+                    <div class="col">
+                        <div class="card text-center" >
+                            <img src="<?php echo $user["imgURL"] ?>" class="card-img-top m-auto" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title text-white text-uppercase"><?php echo $user["title"] ?></h5>
+                                <p class="card-text">
+                                    <?php echo $user["artist"] ?>
+                                </p>
+                                <p class="card-text">
+                                    <?php echo $user["annoDisco"] ?>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+
+            </div>
+
+
+        </div>
+    </main>
+
 </body>
+
 </html>
