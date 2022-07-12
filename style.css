@@ -1,0 +1,19 @@
+.container{
+    
+    height: 100%;
+}
+.card{
+    min-height: 300px;
+    
+}
+.card-body{
+    background-color: #344250;
+}
+main{
+    height: 100vh;
+    background-color: #213344;
+}
+nav{
+    background-color: #344250;
+    padding: 1rem 0;
+}

@@ -15,19 +15,21 @@ require_once "../database.php"
 </head>
 
 <body>
-    <nav>
-
+    <nav class="px-3">
+        <div class="d-flex justify-content-between">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqueSuVfBOMjITRISUPtTYh5BDCxVD_5ec9Q&usqp=CAU" alt="" width="100px">
+        </div>
     </nav>
-    <main>
-        <div class="container">
-            <div class="row row-cols-5">
+    <main class="">
+        <div class="container ">
+            <div class="row row-cols-5 overflow-auto">
 
                 <?php foreach ($usersData as $user) { ?>
                     <div class="col">
-                        <div class="card text-center" >
-                            <img src="<?php echo $user["imgURL"] ?>" class="card-img-top m-auto" alt="..." />
+                        <div class="card text-center mt-3">
+                            <img src="<?php echo $user["imgURL"] ?>" class="card-img-top m-auto" alt="..." / height="100px">
                             <div class="card-body">
-                                <h5 class="card-title text-white text-uppercase"><?php echo $user["title"] ?></h5>
+                                <h5 class="card-title"><?php echo $user["title"] ?></h5>
                                 <p class="card-text">
                                     <?php echo $user["artist"] ?>
                                 </p>
